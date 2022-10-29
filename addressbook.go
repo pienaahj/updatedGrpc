@@ -5,12 +5,19 @@ import (
 	"strings"
 
 	pb "github.com/pienaahj/proto-go-course/proto"
+	"google.golang.org/protobuf/proto"
 	"google.golang.org/protobuf/types/known/timestamppb"
 )
 
-// readPerson reads a person from the addressbook
-func readPerson() {
+// check this page for detail: https://developers.google.com/protocol-buffers/docs/reference/go-generated
+// readPerson reads a person from the addressbook on disk
+func readPerson(fname string, pb proto.Message) {
+	readFromFile(fname, pb)
+}
 
+// writeAddressBook writes the addressbook to disk
+func writeAddressBook(fname string, book *pb.AddressBook) {
+	writeToFile(fname, book)
 }
 
 // doPhoneNumber creates the phoneNumber
