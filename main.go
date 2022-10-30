@@ -10,6 +10,7 @@ import (
 	timestamppb "google.golang.org/protobuf/types/known/timestamppb"
 )
 
+// check this link for proto naming examples: https://github.com/uber/prototool/blob/dev/etc/style/uber1/uber1.proto
 // create a simple message
 func doSimple() *pb.Simple {
 	return &pb.Simple{

@@ -10,6 +10,7 @@ import (
 )
 
 // check this page for detail: https://developers.google.com/protocol-buffers/docs/reference/go-generated
+
 // readPerson reads a person from the addressbook on disk
 func readPerson(fname string, pb proto.Message) {
 	readFromFile(fname, pb)
